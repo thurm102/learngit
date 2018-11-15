@@ -1,0 +1,62 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+---global all repo
+
+mkdir 
+git init
+---create
+
+git add <file1>
+git add <file2>
+git add <file3>>
+git commit -m "comment"
+--promote files
+
+git status
+--
+
+git diff <file1>
+--differents between working directory and stage
+
+git log
+--show history
+
+git log --pretty=online
+--more beautiful
+
+git reset --hard HEAD^^
+--back to HEAD(now) HEAD^^ HEAD~100 and refresh stage
+
+git reset --hard <hash>
+--go anywhere?
+
+git reflog
+--what did i do
+
+git reset HEAD <file>
+--unstage file (just delete this file on stage,will not cover the working directory)
+
+git checkout -- <file>
+--discard changes in working directory (changes between working directory and stage)
+
+rm file
+git rm file
+git commit -m ""
+--delete a file and commit(delete is also a function)
+
+rm file
+git checkout --file
+--get the file back from stage
+
+
+git remote add origin git@github.com:thurm102/learngit.git
+git push -u origin master
+--create a remote reop and push this to github
+
+git push origin master
+--after first push
+
+
+
+
+
